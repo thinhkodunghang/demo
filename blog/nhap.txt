@@ -1,0 +1,1 @@
+cd E:\nodejs\blog\src rồi npm start để run

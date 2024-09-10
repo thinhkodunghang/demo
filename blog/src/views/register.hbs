@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+    <form method="post" action="/auth/register">
+        <h2>Signup</h2>
+        <div class="input_box">
+            <input type="text" name="name" placeholder="Name" id="name" required />
+            <i class="uil uil-user"></i>
+        </div>
+        <div class="input_box">
+            <input type="email" name="email" placeholder="Enter your email" id="email" required />
+            <i class="uil uil-envelope-alt"></i>
+        </div>
+        <div class="input_box">
+            <input type="password" name="password" placeholder="Create password" id="password" required />
+            <i class="uil uil-lock"></i>
+        </div>
+        <div class="input_box">
+            <input type="number" name="age" placeholder="Age" id="age" required />
+            <i class="uil uil-calendar-alt"></i>
+        </div>
+        <div class="input_box">
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="input_box">
+            <input type="text" name="phoneNumber" placeholder="Phone Number" id="phoneNumber" required />
+            <i class="uil uil-phone"></i>
+        </div>
+        <button class="button" type="submit">Signup Now</button>
+        <div class="login_signup">Already have an account? <a href="/auth/login" id="login">Login</a></div>
+    </form>
+    <script src="/js/script.js"></script>
+</body>
+</html>
